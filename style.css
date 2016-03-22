@@ -1,0 +1,182 @@
+/* --- GENERAL RULES --- */
+
+body{
+    background-color:#222222; /* Palate DL */
+    padding: 40px;
+    min-width:950px;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*font-family: Helvetica, Verdana, Arial, sans-serif;*/
+    color:#ffffff;
+}
+
+a{
+    color:#2EA2CC; /* Palate LL */
+    display:inline-block;
+    text-decoration:none;
+    }
+    
+a:hover{
+    color:#FFFFFF; /* Palate TXT */
+    /* Was once #FFFFFF for some reason*/
+}
+
+/* Reminder: 2 link colors are swapped for nav_container*/
+
+
+/* --- SEGMENT RULES --- */
+
+#header{
+    background-image: url("images/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:#111111; /* Palate DD */
+    text-align: center;
+    height: 167px;
+    display: table;
+    width: 100%;
+}
+
+#name{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 5em;
+    letter-spacing: 20px;
+    padding-left: 20px;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#nav {
+    background-color: #003060; /* Palate LD */
+    margin:0;
+    padding:0 0 0 40px;
+    height: 56px;
+}
+
+#nav_container{
+    height: 56px;
+    display: table-cell;
+    vertical-align: middle;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+#nav_container a {
+    color:#FFFFFF; /* Palate TXT (Instead of LL) */ 
+    padding:0 10px 0 0;
+    margin:0;
+}
+
+#nav_container a:hover {
+    color:#2EA2CC; /* Palate LL (Instead of TXT) */
+}
+
+#nav_container li{
+    display:inline-block;
+    padding:0;
+    margin:0;
+    }
+
+
+#main_content{
+    background-color:#111111; /* Palate DD */
+}
+
+.right_column
+{
+    float:right;
+    /*font-size:0.75em;*/
+    text-align: right;
+    width:170px;
+    padding:20px;
+    padding-top:30px;
+    padding-right:40px;
+    margin-bottom:-20px;
+}
+
+/* Not strictly necessary but spaces them nicely */
+.right_column a{
+    /*padding:5px;*/
+    padding:0px;
+    padding-bottom:10px; 
+}
+
+.left_column
+{
+    min-height:380px;
+    margin-right:260px;
+    padding:20px;
+    padding-left:40px;
+    padding-right:0px;
+}
+
+.left_column ul{
+    padding-top:0px;
+    margin-top:0px;
+}
+
+footer{
+    background-color:#111111; /* Palate DD */
+    padding:10px;
+    text-align: center;
+    font-size:0.75em;
+}
+
+
+/* --- INFREQUENT RULES --- */
+
+/*  These rules were created for specific pages,
+    but were added to the overall stylesheet for
+    their overall usefulness for the site */
+
+/* Created for resume, but a very handy rule to have */
+.right{
+    float:right;
+}
+
+/*  Used in Valkyrie, Compiler, Resume -
+    However, since it redefines inherent h3 values,
+    Might be a good rule to rework or repurpose in the future */
+h3 {font-style:italic;
+font-variant:small-caps;}
+
+/* Used in Compiler, but useful if a textarea is needed in the future */
+textarea {
+    color:#FFFFFF; /* Palate TXT; font rules don't carry over from body for textarea */
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: 2px solid #555555;/* A Lighter Gray */
+    background-color:#333333; /* A Darker Gray that's ligher than DL */
+}
+
+
+/* --- COLOR PALATE INFORMATION ---
+
+DD: Dark Color - Dark (Body Background)
+D2: Dark Color - Light (Main Content Background)
+LD: Light Color - Dark (Navigation Bar)
+LL: Light Color - Light (Links)
+TXT: Text; Usually just white
+
+Original Palate:
+DD: #000000
+DL: #111111
+LD: #000033
+LL: #195884
+TXT: #FFFFFF
+
+Sample Palate:
+DD: #222222
+DL: #333333
+LD: #0074A2
+LL: #2EA2CC
+TXT: #FFFFFF
+
+Current Palate:
+DD: #111111
+DL: #222222
+LD: #005280
+LL: #0C80AA
+TXT: #FFFFFF
+
+*/
